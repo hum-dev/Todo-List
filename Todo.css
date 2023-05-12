@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    background-image:linear-gradient(rgba(20, 20, 20, 0.9), rgba(0, 0, 0, 0.9)), url('./Prompt\ 5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: whitesmoke;
+}
+
+.todo {
+    /* background-color: #eee; */
+    box-sizing: border-box;
+    width: 100%;
+    margin: 2rem auto;
+    padding: 0 0 4rem;
+    max-width: 500px;
+    box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.5);
+    /* border: 1px solid rgba(13, 246, 32, 0.5); */
+    border-radius: 6rem;
+    overflow: hidden;
+}
+
+#head {
+    background-image: url(./Prompt\ 2.jpg);
+    background-size: 100%;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    /* margin: 1rem 0; */
+    padding: 1rem 0;
+}
+#head p , .title{
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    padding: 2rem 0;
+    width: 100%;
+}
+.task-list {
+    margin: 4rem ;
+    /* margin-top: 1rem; */
+}
+.task-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.task-list ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(13, 246, 32, 0.5);
+}
+.task-list ul li:hover {
+    border-color: rgba(13, 246, 32, 0.5);
+    color: rgb(9, 217, 162);
+    
+}
+.delete {
+    background-color: rgba(246, 13, 13, 0.5);
+    border: none;
+    border-radius: 8px;
+    padding: 0.3rem;
+    cursor: pointer;
+    color: rgb(9, 217, 78);
+    font-size: .9rem;
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+}
+
+.delete:hover {
+    background-color: rgb(217, 9, 57);
+    color: rgba(62, 238, 206, 0.8);
+}
+
+#add-task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 20rem;
+    /* margin: 1rem 0; */
+    padding: 2rem 0;
+    border-top: 1px solid rgba(13, 246, 32, 0.5);
+    margin: 1rem auto;
+}
+
+#add-task input {
+    padding: 0 1rem;
+    border: 1px solid rgba(13, 246, 32, 0.5);
+    box-sizing: border-box;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(232, 227, 228);
+    background-color: rgba(21, 1, 1, 0.5);
+}
+/* #add-task input:focus {
+    border: 1px solid rgba(13, 246, 32, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(13, 246, 32, 0.5);
+} */
+
+#add-task button {
+    border: 1px solid rgba(13, 246, 32, 0.5);
+    border-radius: 6px;
+    padding: 0.2rem;
+    cursor: pointer;
+    color: rgb(9, 217, 78);
+    font-size: .9rem;
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(21, 1, 1, 0.5);
+}
+
+#add-task button:hover {
+    background-color: rgb(51, 103, 78);
+    color: rgba(80, 238, 62, 0.8);
+}
+
+#add-task::after {
+    content: "";;
+    background-color: rgba(13, 246, 32, 0.5);
+}
